@@ -10,14 +10,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Bcalderon400/burgerbob.git"
+        "url": "git+https://github.com/Bcalderon400/eat-da-burger"
     },
     "author": "Brian Calderon",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/Bcalderon400/burgerbob/issues"
+        "url": "https://github.com/Bcalderon400/eat-da-burger"
     },
-    "homepage": "https://github.com/Bcalderon400/burgerbob#readme",
+    "homepage": "https://github.com/Bcalderon400/eat-da-burger",
     "dependencies": {
         "express": "^4.17.1",
         "express-handlebars": "^3.1.0",
