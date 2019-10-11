@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../public/assets/css/burger_style.css">
+
+</head>
+
+<body>
+
+    <!-- Logo and Title -->
+    <div class="row">
+        <div class="col-12">
+            <h1 class="title">Eat Da Burger!</h1>
+        </div>
+    </div>
+
+    <!-- Form to Submit Burger Names -->
+    <div class="row">
+        <div class="col-12">
+            <form id="addForm">
+                <div class="form-group">
+                    <label for="burgerName">Enter a burger name to add it to the menu:</label>
+                    <input id="burgerName" class="form-control" type="text" placeholder="If Looks Could Kale" required>
+                </div>
+                <button type="submit">Add to Menu</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Burger Menu -->
+        <div class="col-12 col-md-6">
+            <div class="card">
+                <div class="card-header">On the Menu</div>
+                <div class="card-body">
+                    <ul>
+                        <!-- {{#each burgers}} {{#unless devoured}} {{> burgers/burgerBlock devoured=false}} {{/unless}} {{/each}} -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Devoured Burgers List -->
+        <div class="col-12 col-md-6">
+            <div class="card devoured-card">
+                <div class="card-header devoured-header">Devoured Burgers</div>
+                <div class="card-body">
+                    <ul>
+                        <!-- {{#each burgers}} {{#if devoured}} {{> burgers/burgerBlock devoured=true}} {{/if}} {{/each}} -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="/assets/js/burgerScript.js"></script>
+
+    <iframe src="https://giphy.com/embed/HQ2Slp9yEkX72" width="480" height="204" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</body>
+
+</html>
